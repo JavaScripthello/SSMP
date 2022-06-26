@@ -3,6 +3,9 @@ spring:
     active: @profile.active@
      group:
        "dev": devDB
+  devtools:
+    restart:
+      exclude: static/**
 #    include: devDB
 
 mybatis-plus:
