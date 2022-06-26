@@ -1,14 +1,9 @@
 spring:
-  datasource:
-    druid:
-      url: jdbc:mysql://localhost:3306/11?serverTimezone=UTC
-      username: root
-      password: 123456
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      type: com.alibaba.druid.pool.DruidDataSource
-  devtools:
-    restart:
-      exclude: static/**
+  profiles:
+    active: @profile.active@
+     group:
+       "dev": devDB
+#    include: devDB
 
 mybatis-plus:
   configuration:
@@ -18,13 +13,12 @@ mybatis-plus:
     db-config:
       id-type: auto
 #      table-prefix: tb_
-#logging:
-#  level: debug
-#    #日志文件生成
-#  logback:
-#    rollingpolicy:
-#      file-name-pattern: ssmp.%d.%i.log
-#      max-file-size: 10KB
-
-#  file:
-#    name: ssmp
+logging:
+  level: debug
+  file:
+    name: ssm
+    #日志文件生成
+  logback:
+    rollingpolicy:
+      file-name-pattern: ssmp.%d.%i.log
+      max-file-size: 10KB
