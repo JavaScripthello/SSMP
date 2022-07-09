@@ -3,6 +3,7 @@ package com.example.ssmp.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.example.ssmp.entity.Book;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 
 /**
  * @program: SSMP
@@ -12,4 +13,6 @@ import org.apache.ibatis.annotations.Mapper;
  **/
 @Mapper
 public interface BookMapper extends BaseMapper<Book> {
+    @Select("select  * from bookdto where book_id =#{bookId}")
+    Book getBookById(Integer bookId);
 }

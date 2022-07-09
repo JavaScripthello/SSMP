@@ -4,7 +4,6 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.example.ssmp.entity.Book;
 import com.example.ssmp.service.IBookService;
 import com.example.ssmp.utils.ResultUtils;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.annotations.Param;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +24,6 @@ import java.util.List;
  * @author: kangwei
  * @create: 2022-06-18 16:42
  **/
-@Slf4j
 @RestController
 @RequestMapping("/books")
 public class BookController {
@@ -45,7 +43,6 @@ public class BookController {
 
     @PostMapping
     public ResultUtils save(@RequestBody Book book) {
-        log.info("添加书籍请求入参 ==>"+book);
         boolean saveFlag = iBookService.save(book);
 
         return new ResultUtils(saveFlag, saveFlag ? "添加成功" : "添加失败");
