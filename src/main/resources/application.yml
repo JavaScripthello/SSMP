@@ -25,6 +25,13 @@ spring:
     template:
       default-destination: ssmp
 
+#rabbitmq
+  rabbitmq:
+    host: localhost
+    port: 5157
+
+
+
 
 
 

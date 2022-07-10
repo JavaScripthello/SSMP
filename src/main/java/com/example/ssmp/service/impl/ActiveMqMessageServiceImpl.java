@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * @author: kangwei
  * @create: 2022-07-09 22:42
  **/
-@Service
+//@Service
 public class ActiveMqMessageServiceImpl implements MessageService {
 
     @Autowired(required = false)

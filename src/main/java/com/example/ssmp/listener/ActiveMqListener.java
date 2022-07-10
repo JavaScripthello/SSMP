@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * @author: kangwei
  * @create: 2022-07-09 22:46
  **/
-@Component
+//@Component
 public class ActiveMqListener {
 
     /**
