@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * @author: kangwei
  * @create: 2022-07-10 11:43
  **/
-@Component
+//@Component
 public class RabbitMqDirectListener {
 
     @RabbitListener(queues = "{direct_queue}")

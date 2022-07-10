@@ -30,6 +30,12 @@ spring:
     host: localhost
     port: 5157
 
+#kafka
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: itheima2022
+
 
 
 
