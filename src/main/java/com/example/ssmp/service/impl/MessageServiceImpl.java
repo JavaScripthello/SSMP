@@ -12,7 +12,7 @@ import java.util.List;
  * @author: kangwei
  * @create: 2022-07-09 21:58
  **/
-@Service
+//@Service
 public class MessageServiceImpl implements MessageService {
     private  List<String> list = new ArrayList<>();
     @Override

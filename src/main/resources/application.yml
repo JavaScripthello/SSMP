@@ -18,6 +18,14 @@ spring:
       password: 123456
       username: root
 
+#mq
+  activemq:
+    broker-url: tcp://localhost:61616
+  jms:
+    template:
+      default-destination: ssmp
+
+
 
 
 
