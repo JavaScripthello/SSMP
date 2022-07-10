@@ -11,7 +11,7 @@ import org.springframework.context.annotation.EnableMBeanExport;
  * @author: kangwei
  * @create: 2022-07-10 11:44
  **/
-@Configuration
+//@Configuration
 public class RabbitMqDirectConfig {
 
     /**
