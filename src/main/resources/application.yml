@@ -36,6 +36,12 @@ spring:
     consumer:
       group-id: itheima2022
 
+#rocketmq
+rocketmq:
+  name-server: localhost:9287
+  producer:
+    group: group_rocket
+
 
 
 

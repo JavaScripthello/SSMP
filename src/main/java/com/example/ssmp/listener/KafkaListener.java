@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  * @author: kangwei
  * @create: 2022-07-10 20:31
  **/
-@Component
+//@Component
 public class KafkaListener {
 
     @org.springframework.kafka.annotation.KafkaListener(topics = "kafka_topic")

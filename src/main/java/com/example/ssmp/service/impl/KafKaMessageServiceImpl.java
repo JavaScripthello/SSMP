@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  * @author: kangwei
  * @create: 2022-07-10 20:27
  **/
-@Service
+//@Service
 public class KafKaMessageServiceImpl implements MessageService {
     @Autowired
     private KafkaTemplate kafkaTemplate;
